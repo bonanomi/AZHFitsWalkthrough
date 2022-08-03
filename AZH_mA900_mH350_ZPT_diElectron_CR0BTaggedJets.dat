@@ -1,0 +1,52 @@
+# Parameters
+-------------------------------------------------------------------------------
+imax 1
+jmax 3
+kmax *
+shapes * CR0BTaggedJets AZH_mA900_mH350_ZPT_diElectron_CR0BTaggedJets.root CR0BTaggedJets/$PROCESS CR0BTaggedJets/$PROCESS_$SYSTEMATIC
+
+# Channels
+-------------------------------------------------------------------------------
+bin          CR0BTaggedJets
+observation  -1
+
+# Processes
+-------------------------------------------------------------------------------
+bin                                                                                    CR0BTaggedJets        CR0BTaggedJets        CR0BTaggedJets        CR0BTaggedJets        
+process                                                                                DYJets                TT                    TTZ                   VV                    
+process                                                                                1                     2                     3                     4                     
+rate                                                                                   -1                    -1                    -1                    -1                    
+
+# Systematics
+-------------------------------------------------------------------------------
+lumi_13TeV_2016_uncorrelated                                                   lnN     -                     -                     -                     -                     
+lumi_13TeV_2017_uncorrelated                                                   lnN     1.02                  1.02                  1.02                  1.02                  
+lumi_13TeV_2018_uncorrelated                                                   lnN     -                     -                     -                     -                     
+lumi_13TeV_correlated_16_17_18                                                 lnN     1.009                 1.009                 1.009                 1.009                 
+lumi_13TeV_correlated_17_18                                                    lnN     1.006                 1.006                 1.006                 1.006                 
+QCDscale_ttbar                                                                 lnN     -                     0.965/1.024           0.907/1.081           -                     
+QCDscale_VV                                                                    lnN     -                     -                     -                     1.03                  
+QCDscale_V                                                                     lnN     1.02                  -                     -                     -                     
+pdf_gg                                                                         lnN     -                     1.042                 1.035                 -                     
+pdf_qqbar                                                                      lnN     1.02                  -                     -                     1.05                  
+pdf_qg                                                                         lnN     -                     -                     -                     -                     
+CMS_btag_bc                                                                    shape   1                     1                     1                     1                     
+CMS_btag_light                                                                 shape   1                     1                     1                     1                     
+CMS_pu                                                                         shape   1                     1                     1                     1                     
+CMS_trigger_sf_ee                                                              shape   1                     1                     1                     1                     
+CMS_trigger_sf_emu                                                             shape   1                     1                     1                     1                     
+CMS_trigger_sf_mumu                                                            shape   -                     -                     -                     -                     
+CMS_sfelec_reco                                                                shape   1                     1                     1                     1                     
+CMS_sfelec_tight_id                                                            shape   1                     1                     1                     1                     
+CMS_sfmu_isolation                                                             shape   1                     1                     1                     1                     
+CMS_sfmu_tight_id                                                              shape   1                     1                     1                     1                     
+CMS_toppt_a                                                                    shape   -                     1                     1                     -                     
+CMS_toppt_b                                                                    shape   -                     1                     1                     -                     
+CMS_scale_j                                                                    shape   1                     1                     1                     1                     
+CMS_res_j                                                                      shape   1                     1                     1                     1                     
+CMS_mur                                                                        shape   -                     1                     1                     -                     
+CMS_muf                                                                        shape   -                     1                     1                     -                     
+CMS_murmuf                                                                     shape   -                     1                     1                     -                     
+fsr_20_05                                                                      shape   1                     1                     1                     1                     
+isr_20_05                                                                      shape   1                     1                     1                     1                     
+* autoMCStats 10
